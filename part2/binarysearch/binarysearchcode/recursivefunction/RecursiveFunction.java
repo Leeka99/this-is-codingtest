@@ -19,12 +19,12 @@ public class RecursiveFunction {
             return mid;
 
         else if (arr[mid] < target) {
-            start = mid;
+            start = mid + 1;
             return binarySearch();
         }
 
         else {
-            end = mid;
+            end = mid - 1;
             return binarySearch();
         }
     }
